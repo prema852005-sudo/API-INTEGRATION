@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Weather App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="weather-card">
+    <form class="search-bar" id="search-form">
+      <input type="text" id="city-input" placeholder="Enter city name..." required />
+      <button type="submit" aria-label="Search">🔍</button>
+    </form>
+
+    <div class="weather-info" id="weather-info">
+      <h2 id="city">—</h2>
+      <p id="date"></p>
+      <img id="icon" src="" alt="" />
+      <h1 id="temp">--°C</h1>
+      <p id="condition">—</p>
+
+      <div class="details">
+        <div><strong id="humidity">--%</strong><span>Humidity</span></div>
+        <div><strong id="wind">-- km/h</strong><span>Wind</span></div>
+      </div>
+    </div>
+
+    <p class="error" id="error"></p>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
